@@ -7,3 +7,9 @@ variable "env" {
     description = "Deployment environment"
     default = "dev"
 }
+
+variable "varsource" {
+  type        = string
+  description = "Source used to define variables"
+  default     = "variables.tf"
+}
