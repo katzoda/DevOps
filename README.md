@@ -1,1 +1,3 @@
-# dev-ops
+# DevOps
+
+Repo for my devops projects.
