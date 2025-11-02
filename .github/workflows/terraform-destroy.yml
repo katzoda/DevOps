@@ -37,6 +37,10 @@ jobs:
         run: terraform validate
         working-directory: 01-aws_basic_cicd/
 
+      - name: Terraform Plan
+        run: terraform plan
+        working-directory: 01-aws_basic_cicd/
+
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
         working-directory: 01-aws_basic_cicd/
