@@ -13,3 +13,7 @@ variable "varsource" {
   description = "Source used to define variables"
   default     = "variables.tf"
 }
+
+variable "vpc_cidr" {
+    default = "10.1.0.0/16" 
+}
