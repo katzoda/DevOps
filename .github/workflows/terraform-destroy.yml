@@ -4,13 +4,9 @@ on:
   workflow_dispatch: 
 
 jobs:
-  destroy:
+  terraform:
     name: Terraform Destroy
     runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - name: Checkout repo
@@ -35,10 +31,6 @@ jobs:
 
       - name: Terraform Validate
         run: terraform validate
-        working-directory: 01-aws_basic_cicd/
-
-      - name: Terraform Plan
-        run: terraform plan
         working-directory: 01-aws_basic_cicd/
 
       - name: Terraform Destroy
